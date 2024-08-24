@@ -1,0 +1,17 @@
+on: push
+name: 🚀 Deploy site on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: "156.224.26.99"
+        username: kivotos_awa_gs
+        port: 21
+        password: LnnREP82J5yBxR4R
