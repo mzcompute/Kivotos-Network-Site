@@ -1,0 +1,97 @@
+<!--
+
+    Copyright HoRzTeam [i@horz.team], All Rights Reserved.
+
+    如需使用本源代码，请保留HoRzTeam的署名，这将是对原作者的尊重。
+
+    If you use this source code, please keep the 
+    signature of HoRzTeam, which will be a respect for the original author.
+
+       _  _                ___              ____                                 
+      FJ  L]     ____     F _ ",    _____  /_  _\   ____      ___ _    _ _____   
+     J |__| L   F __ J   J `-'(|   [__   F [J  L]  F __ J    F __` L  J '_  _ `, 
+     |  __  |  | |--| |  |  _  L   `-.'.'/  |  |  | _____J  | |--| |  | |_||_| | 
+     F L__J J  F L__J J  F |_\  L  .' (_(_  F  J  F L___--. F L__J J  F L LJ J J 
+    J__L  J__LJ\______/FJ__| \\__LJ_______LJ____LJ\______/FJ\____,__LJ__L LJ J__L
+    |__L  J__| J______F |__|  J__||_______||____| J______F  J____,__F|__L LJ J__|
+
+    由MZCompute GmbH.计算
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Kivotos</title>
+    <link href="./assets/index.css" rel="stylesheet"/>
+</head>
+<body ontouchstart="">
+    <div class="header mobile-navbar mobile">
+
+    </div>
+    <div class="slide-container" id="slidePage-container">
+		<div class="slide-page page1">
+            <div class="mobile mobile-logo">
+                <img src="./assets/nobg_logo.png" class="mobile-logo-img" />
+            </div>
+            <div class="mobile mobile-bgmpic">
+                <img src="./assets/bgm.png" class="mobile-bgmpic-pic" />
+            </div>
+			<video autoplay loop muted src="./assets/output.mp4" class="mobile mobile-bg"></video>
+			<div class="container">
+				<div class="mobile">
+                    <div class="mobile-welcome2kivotos ">
+                        <span class="mobile-welcome2kivotos-title">欢迎来到 <span class="mobile-welcome2kivotos-title-k">基沃托斯</span></span>
+                        <span class="mobile-welcome2kivotos-title-sub"  >WELCOME TO KIVOTOS</span>
+                        <div class="mobile-welcome2kivotos-btn">
+                            <a href="https://kivotos.horz.team"><div class="mobile-welcome2kivotos-btn1 mobile-mgr2"><img src="./assets/btn1.png" /></div></a>
+                            <a href="https://kivotos.horz.team/download/"><div class="mobile-welcome2kivotos-btn1"><img src="./assets/btn2.png" /></div></a>
+                        </div>
+                        <span class="mobile-welcome2kivotos-copyright">Copyright 2024 Horzteam. 由 MZCompute GmbH. 计算</span>
+                    </div>
+                </div>
+                <!--
+				<div class="step step1 animated fadeIn" data-delay="1000"></div>
+				<div class="step step2 animated fadeIn"></div>
+                -->
+			</div>
+		</div>
+		<div class="slide-page page2">
+			<div class="container">
+				<h2>Page2 - 延迟播放动画</h2>
+				<div class="step step1 animated bounceIn" data-delay="1000"></div>
+				<div class="step step2 animated flipInX" data-delay="1500"></div>
+				<div class="step step3 animated flipInY" data-delay="2000"></div>
+			</div>
+		</div>
+		<div class="slide-page page3">
+			<div class="container">
+				<h2>Page3 - 手动播放动画</h2>
+				<a class="play" href="javascript:slide.slideFire(3)">点击播放动画</a>
+				<div class="lazy step1 animated zoomInDown"></div>
+				<div class="lazy step2 animated rollIn"></div>
+			</div>
+		</div>
+		<div class="slide-page page4">
+			<div class="container">
+				<h2>Page4 - 滚动条滚动</h2>
+				<p>当内容长度超过屏幕<br/>会自动变成原生滚动条方式</p>
+				<ul>
+					<li>滚动内容 - 第1条</li>
+					<li>滚动内容 - 第2条</li>
+					<li>滚动内容 - 第3条</li>
+					<li>滚动内容 - 第4条</li>
+					<li>滚动内容 - 最后1条内容</li>
+				</ul>
+			</div>
+		</div>
+		<nav class="pagination" id="pagination">
+			<div class="pagination-page"></div>
+		</nav>
+	</div>
+
+    <script src="./assets/bkk.js"></script><script src="./assets/index.js"></script>
+</body>
+</html>

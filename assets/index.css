@@ -1,0 +1,256 @@
+@import url("./computer.css");
+@import url("./mobile.css");
+        /*平板*/
+        @media screen and (min-width:600px) and (max-width:960px){
+            
+        }
+        /*PC*/
+
+        @font-face {
+            font-family: 'misans';
+            src: url('./misans.woff2') format('woff2'),
+           }  
+
+
+        body{font-family: misans,Arial, Helvetica, sans-serif;}
+
+.slide-container{width:100%;height:100%;overflow:hidden;position:relative}.slide-container .slide-page{position:absolute;top:0;left:0;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-text-size-adjust:none;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;background-position:center}.slide-container .slide-page{transform:translate3d(0,100%,0);-webkit-transform:translate3d(0,100%,0)}.slide-container .slide-page.transition{transition:transform .7s cubic-bezier(.55,.085,0,.99);-webkit-transition:transform .7s cubic-bezier(.55,.085,0,.99)}
+html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+        .pagination-page .active{
+            background-color: #1f90fa;
+        }
+
+		.slide-page h2 {
+			margin: 0;
+			padding: 20px 0;
+			text-align: center;
+		}
+
+		.slide-page p {
+			box-sizing: border-box;
+			padding: 10px 20px;
+			text-align: center;
+		}
+
+		.prev-page,
+		.next-page {
+			display: block;
+			width: 25px;
+			height: 25px;
+			line-height: 26px;
+			position: absolute;
+			right: 2px;
+			z-index: 9999;
+			background: rgba(255, 255, 255, .5);
+			border-radius: 50%;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		.prev-page {
+			top: 0;
+		}
+
+		.next-page {
+			bottom: 0;
+		}
+
+		.prev-page:active {
+			background: rgba(155, 155, 155, .5);
+		}
+
+		.next-page:active {
+			background: rgba(155, 155, 155, .5);
+		}
+
+		.pagination {
+			width: 30px;
+			height: auto;
+			position: fixed;
+			top: 50%;
+			right: 5px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 40px 0;
+			z-index: 1;
+			transform: translate(0, -50%);
+		}
+
+		.pagination a {
+			width: 25px;
+			height: 25px;
+			display: block;
+			line-height: 28px;
+			text-align: center;
+			padding-left: 3px;
+		}
+
+		.pagination a:after {
+			content: "";
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			display: inline-block;
+			background: rgba(0, 0, 0, .5);
+			-webkit-transition: background .3s ease;
+			-moz-transition: background .3s ease;
+			-ms-transition: background .3s ease;
+			-o-transition: background .3s ease;
+			transition: background .3s ease;
+		}
+
+		.pagination a.active:after {
+			background: rgba(255, 255, 255, .5);
+		}
+
+		.add,
+		.remove,
+		.play {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -20px;
+			margin-left: -50px;
+			width: 100px;
+			height: 100px;
+			webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			padding: 38px 0;
+			box-sizing: border-box;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 14px;
+			text-decoration: none;
+		}
+
+		.page1 .step1 {
+			position: absolute;
+			top: 100px;
+			left: 19%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		.page1 .step2 {
+			position: absolute;
+			bottom: 100px;
+			right: 19%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+		}
+
+		.page2 .step1 {
+			position: absolute;
+			top: 100px;
+			right: 5%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		.page2 .step3 {
+			position: absolute;
+			bottom: 60px;
+			left: 19%;
+			text-align: center;
+			width: 150px;
+			height: 150px;
+		}
+
+		.page2 .step2 {
+			position: absolute;
+			top: 100px;
+			left: 19%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+		}
+
+		.page3 .step1 {
+			position: absolute;
+			top: 100px;
+			left: 19%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		.page3 .step2 {
+			position: absolute;
+			bottom: 100px;
+			right: 19%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+		}
+
+		.page4 .container {
+			padding-bottom: 20px;
+		}
+
+		.page4 ul {
+			margin: 0;
+			padding: 0;
+			width: 90%;
+			margin-left: 5%;
+		}
+
+		.page4 ul li {
+			width: 100%;
+			padding: 100px 10px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border-bottom: 1px solid rgb(83, 83, 83);
+			background: rgba(255, 255, 255, .5);
+			text-align: center;
+		}
+
+		.page5 .step2 {
+			position: absolute;
+			top: 100px;
+			left: 19%;
+			text-align: center;
+			width: 150px;
+			height: 100px;
+		}
+
+		.page5 .step1 {
+			position: absolute;
+			bottom: 100px;
+			left: 19%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+		}
+
+		.page5 .step3 {
+			position: absolute;
+			bottom: 100px;
+			left: 60%;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
