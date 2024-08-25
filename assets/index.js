@@ -56,3 +56,4 @@ function removepage() {
     slide.update()
 }
 
+
