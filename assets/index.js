@@ -10,7 +10,7 @@ console.log(`%c %c\nMinecraft Kivotos`,
 console.log(`%c Kivotos.Net.Cn %c Version: 1.0.0-alpha-082524 `,'background: #1f90fa; padding: 4px; border-radius: 3px 0 0 3px; color: #fff', 
   'background: #fff; padding: 4px; border-radius: 0 3px 3px 0; color: #1f90fa;',)
 
-console.log(`Copyright HoRzTeam [i@horz.team], All Rights Reserve.\nComputed by MZCompute GmbH.`)
+console.log(`Copyright HoRzTeam [i@horz.team], All Rights Reserved.\nComputed by MZCompute GmbH.`)
 
 function GetQueryString(name){
     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
