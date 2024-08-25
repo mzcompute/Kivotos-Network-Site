@@ -43,8 +43,17 @@
 </head>
 	<!-- Body -->
 <body ontouchstart="">
-    <div class="header mobile-navbar mobile">
-
+    <div class="mb-header mobile-navbar mobile">
+		<div class="mobile-navbar-menubox">
+			<a href="#toggleMusic" onclick="togglemusic()">
+			<div class="mobile-menubox0btn">
+				<div class="mobile-btn1" id="nl-btn1"></div>
+			</div></a>
+			<a href="https://kivotos-id.awa.gs">
+			<div class="mobile-menubox0btn">
+				<div class="mobile-btn2"></div>
+			</div></a>
+		</div>
     </div>
     <div class="slide-container" id="slidePage-container">
 		<div class="slide-page page1">
@@ -129,6 +138,8 @@
 			<div class="pagination-page"></div>
 		</nav>
 	</div>
+
+	<audio id="mbgm" src="./assets/bgm.mp3"></audio>
 
     <script src="./assets/bkk.js?0825"></script><script src="./assets/index.js?0825-01"></script>
 </body>
