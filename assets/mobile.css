@@ -84,7 +84,7 @@
         object-fit: fill;
     }
     .mobile-btn1,.mobile-btn2{
-        background-color: #737373;
+        background-color: #737373 !important;
     }
 
 }

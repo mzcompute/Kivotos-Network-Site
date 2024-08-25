@@ -84,7 +84,6 @@ function togglemusic()
         mask-position: center;
         width: 100%;
         height: 100%;
-        background-color: #737373;
         transition: all .3s ease;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -99,7 +98,6 @@ function togglemusic()
         mask-position: center;
         width: 100%;
         height: 100%;
-        background-color: #737373;
         transition: all .3s ease;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
