@@ -79,4 +79,11 @@
         margin-top: 1.2666666667rem;
         align-self: start;
     }
+    .mobile-menubox0btn{
+        width: 2rem !important ;
+        height: 2rem !important ;
+    }
+    .mobile-btn1,.mobile-btn2{
+        background-color: #fff;
+    }
 }
