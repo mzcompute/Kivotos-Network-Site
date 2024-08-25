@@ -92,5 +92,6 @@
         max-height: 99%;
         pointer-events: none;
         z-index: -114514;
+        object-fit: fill;
     }
 }
