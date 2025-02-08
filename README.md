@@ -1,11 +1,9 @@
-# Minecraft-Kivotos-Site
-
-此站点为Minecraft Kivotos的网站首页
+# Minecraft-Kivotos-Site-EN
 
 Copyright HoRzTeam [i@horz.team], All Rights Reserved.
 
-如需使用本项目源代码，请保留HoRzTeam的署名，这将是对原作者的尊重。
-对于任何恶意修改页面的版权信息（包括不限于删除、修改作者信息、修改链接指向）的用户，作者保留对其追究责任的权利。
+このプロジェクトのソースコードを使用するには、HoRzTeamの帰属表示を保持してください。
+作者は、このページの著作権情報を悪意を持って改変（削除、作者情報の改変、リンクの改変を含むがこれに限定されない）したユーザーの責任を追及する権利を留保します。
 
 If you use this source code, please keep the 
 signature of HoRzTeam, which will be a respect for the original author.
@@ -21,4 +19,4 @@ The author reserves the right to pursue liability for any user who maliciously m
     J__L  J__LJ\______/FJ__| \\__LJ_______LJ____LJ\______/FJ\____,__LJ__L LJ J__L
     |__L  J__| J______F |__|  J__||_______||____| J______F  J____,__F|__L LJ J__|
 
-由 MZCompute GmbH. 计算
+MZCompute GmbHにより算出。
