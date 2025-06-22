@@ -86,4 +86,85 @@
     .mobile-btn1,.mobile-btn2{
         background-color: #fff !important;
     }
+    .kn-rss-container{
+        width: calc(80dvw - 1rem);
+        margin: auto;
+        margin-top: calc(6dvh + 7.3333rem);
+    }
+    .kn-rss-title{
+        font-size: 3rem;
+    }
+    #kn-rss-img {
+        position: fixed;
+        right: 10rem;
+        top: 50%;
+        transform: translateY(-50%) skew(-10deg);
+        width: 45dvw;
+        
+        object-fit: cover;
+        border-radius: 15px;
+        border: 8px solid #fff;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
+    
+    #kn-rss-img:hover {
+        transform: translateY(-50%) skew(-10deg) scale(1.05);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .news-icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 30dvw;
+        height: 200px;
+        z-index: 5;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    
+    #kn-rss-img:hover + .news-icon,
+    .news-icon:hover {
+
+    }
+    
+
+
+    .rss-article{
+        width: 100%;
+        position: relative;
+        margin-bottom: .8666666667rem;
+        transition: all .3s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        margin-bottom: 2.333rem;
+    }
+.rss-article:after{
+    content: "";
+        position: absolute;
+        bottom: 2;
+        left: 0;
+        width: 100%;
+        height: .0333333333rem;
+        background-color: #c4c4c4;
+        transition: all .3s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        margin-top: 1rem;
+}
+.rss-article a{
+    text-decoration: none;
+}
+.knrss-items{
+    margin-top: 2.33333dvh;
+    margin-left: 1.5dvw;
+}
+.knewsimg{
+    height: 8rem;
+}
 }

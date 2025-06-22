@@ -86,5 +86,58 @@
     .mobile-btn1,.mobile-btn2{
         background-color: #737373 !important;
     }
+    
+    #kn-rss-img {
+        position: relative;
+        transform: skew(-10deg);
+        width: 250px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 6px solid #fff;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        display: block;
+        transition: all 0.3s ease;
+        margin-top: 7dvh;
+    }
+    
+    #kn-rss-img:active {
+        transform: skew(-10deg) scale(0.95);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .news-icon {
+        display: none;
+    }
+    
+    .kn-rss-container {
+        width: calc(100vw - 2rem);
+        margin: 1rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+    }
+    
+    .kn-rss-title {
 
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .knewsimg {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .knrss-items {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #333;
+    }
+.rss-article{
+    margin: 1rem;
+}
 }

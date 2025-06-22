@@ -109,6 +109,14 @@ maudio.addEventListener("ended", function() {
     this.play();
 });
 
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    const year = String(date.getFullYear()).slice(2); // 取年份后两位
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // 月份从0开始，需要+1
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}.${month}.${day}`;
+  }
+
 
 async function fetchRSS() {
   try {
@@ -124,12 +132,18 @@ async function fetchRSS() {
       const title = item.querySelector('title').textContent;
       const link = item.querySelector('link').textContent;
       const desc = item.querySelector('description').textContent;
-
+      var cate = item.querySelector('category').textContent;
+      var date=formatDate(item.querySelector('pubDate').textContent);
       const article = document.createElement('div');
+      if(cate=="blackboard"){cate="黑板"}
       article.className = 'rss-article';
       article.innerHTML = `
+      <div class="kn-rss-top"><div class="kn-rss-typebox"><span class="kn-rss-type">${cate}</span></div>
+      <div class="kn-rss-date" style="color: #878787;">${date}</div>
+      </div>
         <h3><a href="${link}" target="_blank">${title}</a></h3>
-        <p>${desc.substring(0, 100)}...</p>
+        <span>${desc.substring(0, 100)}...</span><br>
+        
       `;
       container.appendChild(article);
     });
